@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://media.istockphoto.com/id/1219382595/vector/math-equations-written-on-a-blackboard.jpg?s=612x612&w=0&k=20&c=ShVWsMm2SNCNcIjuWGtpft0kYh5iokCzu0aHPC2fV4A=') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for better readability */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    font-size: 1.2em;
+    color: #333;
+}
+.highlight {
+    font-weight: bold;
+    color: #e44d26; /* You can adjust the color as desired */
+}
+

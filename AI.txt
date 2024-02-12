@@ -1,0 +1,1 @@
+ Informed search in AI is a type of search algorithm that uses additional information to guide the search process, allowing for more efficient problem-solving compared to uninformed search algorithms. This information can be in the form of heuristics, estimates of cost, or other relevant data to prioritize which states to expand and explore.

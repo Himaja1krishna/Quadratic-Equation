@@ -1,0 +1,111 @@
+variables:
+
+Syntax: val x:Int = 10
+example :
+    fun main() {
+    val cartTotal = 0
+    cartTotal = 20
+    println("Total: $cartTotal")
+    } Error: compliation
+
+val keyword - Use when you expect the variable value will not change.
+var keyword - Use when you expect the variable value can change.
+
+ex 2:
+fun main() {
+    var cartTotal = 0
+    println("Total: $cartTotal")
+
+    cartTotal = 20
+    println("Total: $cartTotal")
+}
+
+output:
+Total: 0
+Total: 20
+
+
+
+Create and use functions in Kotlin:
+
+fun main() {
+    birthdayGreeting()
+}
+
+fun birthdayGreeting() {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+
+o/p:
+Happy Birthday, Rover!
+You are now 5 years old!
+
+
+return value:
+
+fun birthdayGreeting(): String {
+    val nameGreeting = "Happy Birthday, Rover!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+fun main() {
+    println(birthdayGreeting())
+}
+
+op:
+Happy Birthday, Rover!
+You are now 5 years old!
+
+Parameters:
+
+fun birthdayGreeting(name: String): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+fun main() {
+    println(birthdayGreeting("Rover"))
+}
+
+o/p:
+Happy Birthday, Rover!
+You are now 5 years old!
+
+Named Arguments:
+println(birthdayGreeting(name = "Rex", age = 2))
+o/p:
+Happy Birthday, Rover!
+You are now 5 years old!
+Happy Birthday, Rex!
+You are now 2 years old!
+
+Reorder the named arguments. For example, put the age named argument before the name named argument.
+
+println(birthdayGreeting(age = 2, name = "Rex"))
+o/p:
+Happy Birthday, Rover!
+You are now 5 years old!
+Happy Birthday, Rex!
+You are now 2 years old!
+
+Default arguments:
+fun birthdayGreeting(name: String = "Rover", age: Int): String {
+    return "Happy Birthday, $name! You are now $age years old!"
+}
+println(birthdayGreeting(age = 5))
+println(birthdayGreeting("Rex", 2))
+
+o/P:
+Happy Birthday, Rover! You are now 5 years old!
+Happy Birthday, Rex! You are now 2 years old!
+
+
+
+
+
+
+
+
+
+
